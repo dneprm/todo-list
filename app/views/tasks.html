@@ -1,0 +1,16 @@
+<div ng-controller="TasksController">
+	<h1>Tasks list</h1>
+	<table>
+		<tr>
+			<th>Task name</th>
+		    <th>Tags</th>
+		    <th>Actual effort</th>
+		    <th>Estimated effort</th>
+		    <th>Due date</th>
+	    </tr>
+	</table>
+
+		<div ng-repeat="task in activeTasks">
+		    <task-listing task="task"></task-listing>
+		</div>
+</div>

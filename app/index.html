@@ -4,14 +4,31 @@
     	<title>Todo-list</title>
     	<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" />
     	<script src="js/lib/angular.min.js"></script>
+        <script src="js/lib/angular-route.min.js"></script>
+
        
     <body ng-app="Todo-list">
-        <h1>Hello world</h1>
-        {{ 4+4 }}
-
+     
+        <div ng-view></div>
 
         <!-- Modules -->
     <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/TasksController.js"></script>
+    <script src="js/controllers/TaskController.js"></script>
+
+      
+      <!-- Directives -->
+    <script src="js/directives/taskListing.js"></script>
+
+    <!-- Services -->
+    <script src="js/services/tasks.js"></script>
+
+
+
+
     </body>
 </html>

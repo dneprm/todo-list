@@ -1,0 +1,17 @@
+table {
+	width: 100%;
+	min-width: 500px;
+}
+th, td {
+	width: 20%;
+	border: 1px solid black;
+}
+th, h1 {
+	color: blue;
+}
+h1 {
+	text-align: center;
+}
+a {
+	text-decoration: none;
+}
