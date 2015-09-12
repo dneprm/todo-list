@@ -14,6 +14,7 @@ app.controller('TasksController', ['$scope', 'tasks', function($scope, tasks) {
 				var tagsList = $scope.activeTasks[i]['tags'].join(', ');
 				$scope.activeTasks[i]['tags'] = tagsList;
 			}
+			$scope.activeTasks[i]['index'] = i;
 		}
 
 	});

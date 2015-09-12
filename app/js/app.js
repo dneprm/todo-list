@@ -6,7 +6,7 @@ app.config(function($routeProvider) {
     templateUrl: 'views/tasks.html' 
   })
   .when('/tasks/:taskId', {
-    controller: 'TasksController', 
+    controller: 'TaskController', 
     templateUrl: 'views/task.html'
   })
   .otherwise({
