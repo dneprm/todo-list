@@ -29,13 +29,13 @@ describe("Todo-list app", function() {
 		});
 		it('data for TasksController was loaded and $scope.tasks.tags were modified', function() {
 			expect($scope.tasks).toEqual([
-				{name: 'Make breakfast', obj_status: 'active', tags: "Cerri, task"},
+				{name: 'Make breakfast', obj_status: 'active', tags: "Cerri, task", index: 0},
 				{name: 'Check the notes', obj_status: 'trashed'}
 			]);
 		});
-		it('data for $scope.activeTasks was filtered (only with status active were chosen)', function() {
+		it('data for $scope.activeTasks was filtered (only with status active were chosen) and index was added', function() {
 			expect($scope.activeTasks).toEqual([
-				{name: 'Make breakfast', obj_status: 'active', tags: "Cerri, task"}
+				{name: 'Make breakfast', obj_status: 'active', tags: "Cerri, task", index: 0}
 			]);
 		});
 
